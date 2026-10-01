@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,76 +9,144 @@
 
 <body>
 
-    <div class="container">
-        <header>
-        <div class="busca">
-            <input type="text">
-            <span>⌕</span>
-        </div>
-            <h1>filmoteca</h1>
-            <div class="perfil"></div>
-        </header>
+    <header>
 
-    <div class="conteudo">
-
-
-    <aside>
-        <div>romance</div>
-        <div>comédia</div>
-        <div>drama</div>
-        <div>terror</div>
-        <div>suspense</div>
-        <div>ação</div>
-        <div>ficção científica</div>
-        <div>comédia romântica</div>
-        <div>documentário</div>
-        <div>fantasia</div>
-        <div>infantil</div>
-    </aside>
-
-    <main>
-
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★★★★☆</div>
-            <small>informações do filme</small>
+        <div class="logo">
+            Filmoteca
         </div>
 
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★★★★☆</div>
-            <small>informações do filme</small>
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar filme...">
+            <span>🔍</span>
         </div>
 
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★★★★☆</div>
-            <small>informações do filme</small>
+        <div class="perfil-container">
+
+            <button class="usuario" id="botaoPerfil">
+                👤
+            </button>
+
+            <div class="menu-perfil" id="menuPerfil">
+
+                <div class="perfil-nome">
+                    <strong>Meu perfil</strong>
+                    <span>thayla@email.com</span>
+                </div>
+
+                <div class="linha"></div>
+
+                <button onclick="abrirAvaliacoes()">
+                    ⭐ Minhas avaliações
+                </button>
+
+                <button onclick="abrirFavoritos()">
+                    ❤️ Filmes favoritos
+                </button>
+
+                <div class="linha"></div>
+
+                <button class="sair" onclick="sair()">
+                    🚪 Sair
+                </button>
+
+            </div>
+
         </div>
 
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★★☆☆☆</div>
-            <small>informações do filme</small>
-        </div>
+    </header>
 
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★☆☆☆☆</div>
-            <small>informações do filme</small>
-        </div>
+    <div class="corpo">
 
-        <div class="filme">
-            <div class="capa">filme</div>
-            <div class="estrelas">★★★★★</div>
-            <small>informações do filme</small>
-        </div>
+        <aside>
 
-    </main>
+            <h3>Gêneros</h3>
 
-        </div>
+            <a href="#">Todos</a>
+            <a href="#">Romance</a>
+            <a href="#">Comédia</a>
+            <a href="#">Drama</a>
+            <a href="#">Terror</a>
+            <a href="#">Suspense</a>
+            <a href="#">Ação</a>
+            <a href="#">Ficção científica</a>
+            <a href="#">Fantasia</a>
+            <a href="#">Documentário</a>
+            <a href="#">Infantil</a>
+
+        </aside>
+
+        <main>
+
+            <div class="titulo">
+                <h1>Filmes</h1>
+                <p>Confira sua coleção de filmes</p>
+            </div>
+
+            <section class="filmes">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 01</h2>
+                    <p>Drama • 2025</p>
+                    <div class="estrelas">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 02</h2>
+                    <p>Romance • 2024</p>
+                    <div class="estrelas">★★★★☆</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 03</h2>
+                    <p>Ação • 2025</p>
+                    <div class="estrelas">★★★★☆</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 04</h2>
+                    <p>Terror • 2023</p>
+                    <div class="estrelas">★★★☆☆</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 05</h2>
+                    <p>Comédia • 2024</p>
+                    <div class="estrelas">★★★★★</div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=500&q=80">
+                    <h2>Filme 06</h2>
+                    <p>Fantasia • 2025</p>
+                    <div class="estrelas">★★★★☆</div>
+                </div>
+
+            </section>
+
+        </main>
+
     </div>
 
-</body>
+    <div class="tela" id="tela">
 
+        <div class="janela">
+
+            <button class="fechar" onclick="fecharTela()">×</button>
+
+            <h2 id="tituloTela"></h2>
+
+            <div id="conteudoTela"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
 </html>

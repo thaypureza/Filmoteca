@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eaf6ff;
+    color: #243746;
+}
+
+
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(70, 150, 200, 0.15);
+}
+
+
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    font-size: 35px;
+}
+
+.logo h1 {
+    color: #4aa9d8;
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #78909c;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+    height: 45px;
+    padding: 0 14px;
+    border: 1px solid #c9dce8;
+    border-radius: 9px;
+    outline: none;
+    font-size: 14px;
+    background: #fafdff;
+}
+
+.campo input:focus {
+    border-color: #55afd9;
+}
+
+
+.senha-box {
+    position: relative;
+}
+
+.senha-box input {
+    padding-right: 45px;
+}
+
+.senha-box button {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+small {
+    color: #e57373;
+    font-size: 12px;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.opcoes a,
+.cadastro a {
+    color: #3598c9;
+    text-decoration: none;
+}
+
+.opcoes a:hover,
+.cadastro a:hover {
+    text-decoration: underline;
+}
+
+
+.botao {
+    width: 100%;
+    height: 46px;
+    border: none;
+    border-radius: 9px;
+    background: #55afd9;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #3999c7;
+}
+
+
+#mensagem {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+.cadastro {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #e5eef3;
+    color: #78909c;
+    font-size: 13px;
+}

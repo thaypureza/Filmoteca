@@ -1,17 +1,20 @@
 {
-  "name": "backend",
+  "name": "filmoteca",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch src/server/server.js",
+    "start": "node src/server/server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "dependencies": {
+    "dotenv": "^18.0.5",
     "express": "^5.2.1",
-    "node": "^22.23.3"
+    "node": "^22.23.3",
+    "pg": "^8.23.1"
   }
 }
