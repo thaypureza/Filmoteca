@@ -1,0 +1,111 @@
+* {
+   width: 100%;
+   height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+header {
+    height: 65px;
+    border-bottom: 2px solid #222;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.busca {
+    width: 210px;
+    height: 28px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.busca input {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.busca span {
+    font-size: 22px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.perfil {
+    width: 23px;
+    height: 23px;
+    border: 1px solid #222;
+    border-radius: 50%;
+}
+
+
+
+.conteudo {
+    display: flex;
+}
+
+
+aside {
+    width: 120px;
+    border-right: 2px solid #222;
+}
+
+aside div {
+    height: 28px;
+    border-bottom: 1px solid #222;
+    padding: 6px 5px;
+    font-size: 11px;
+}
+
+
+
+main {
+    flex: 1;
+    padding: 25px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px 35px;
+}
+
+.filme {
+    text-align: center;
+}
+
+.capa {
+    width: 80px;
+    height: 108px;
+    border: 1.5px solid #222;
+    border-radius: 16px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.estrelas {
+    margin-top: 7px;
+    font-size: 20px;
+    letter-spacing: -3px;
+}
+
+small {
+    font-size: 8px;
+}
